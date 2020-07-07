@@ -1,6 +1,6 @@
 {
   "name": "encova-button-stencil-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -28,5 +28,13 @@
   "dependencies": {
     "typescript": "^3.8.3"
   },
-  "author": "Josh Seltzer"
+  "author": "Josh Seltzer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jseltzer7/encova-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jseltzer7/encova-button/issues"
+  },
+  "homepage": "https://github.com/jseltzer7/encova-button#readme"
 }
