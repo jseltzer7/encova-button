@@ -11,6 +11,8 @@ Has text attribute to fill for the button's text
 
 0.0.3 - Minor update - 7/7/20 3:11 CST - Working correctly! Imported well into the React Application - needed the customElements polyfills added to index.js in order to run. Polyfill imported from loader folder in index.js, component imported from component name in any file it is used in.
 
+0.0.4 - Minor Update - 7/7/20 3:30 CST - Minor readme updates to make sure they appear on NPM
+
 
 # Runtime
 Runs through stencil `npm run start`
