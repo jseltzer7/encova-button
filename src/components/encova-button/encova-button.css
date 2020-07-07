@@ -1,0 +1,20 @@
+:host {
+  display: block;
+}
+
+button {
+  border-radius: 10rem;
+  background-color: #43beac;
+  padding: .7rem 3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: GothamMedium, GothamBook,"Montserrat",Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
+  border: .2rem solid #43beac;
+  letter-spacing: .15em;
+  white-space: normal;
+  cursor: pointer;
+}
