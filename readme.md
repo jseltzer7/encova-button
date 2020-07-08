@@ -62,7 +62,7 @@ Netlify was not working, tried adding --quiet command to the `build-storybook` s
 
 [Netlify Link when Deployed (not currently available)](https://sleepy-bartik-f66b83.netlify.app/)
 
-[Vercel Link (project not available)](#)
+[Vercel Link (project not available)](#links)
 
 [Chromatic Build Link](https://www.chromatic.com/builds?appId=5f06005e4432420022ae1de6)
 
