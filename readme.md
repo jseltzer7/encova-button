@@ -19,6 +19,8 @@ Has text attribute to fill for the button's text
 
 0.0.7 - 7/8/20 9:20 CST - Updated description for package
 
+0.0.8 - 7/8/20 10:10 CST - Adding Storybooks Knobs Addon to project. Working correctly, added one story to `<encova-button>` that makes use of knobs addition.
+
 
 # Runtime
 Runs through stencil `npm run start`
