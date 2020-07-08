@@ -1,6 +1,6 @@
 {
   "name": "encova-button-stencil-component",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Component Library being developed for testing using StencilJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
