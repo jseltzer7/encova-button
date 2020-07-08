@@ -46,9 +46,15 @@ Netlify was not working, tried adding --quiet command to the `build-storybook` s
 
 # Links
 [Web Component Library](https://www.npmjs.com/package/encova-button-stencil-component)
+
 [Web Component Library GitHub Repo](https://github.com/jseltzer7/encova-button)
+
 [React App with Implementation of Web Components](https://github.com/jseltzer7/Encova-DesignSystem-Testing)
+
 [Netlify Link when Deployed (not currently available)](https://sleepy-bartik-f66b83.netlify.app/)
-[Vercel Link (project not available)](#)
+
+[Vercel Link (project not available)](#links)
+
 [Chromatic Build Link](https://www.chromatic.com/builds?appId=5f06005e4432420022ae1de6)
+
 [Chromatic Static Story Link](https://5f06005e4432420022ae1de6-tclghgrfut.chromatic.com/)
