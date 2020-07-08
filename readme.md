@@ -15,6 +15,8 @@ Has text attribute to fill for the button's text
 
 0.0.5 - Storybook Addition - 7/8/20 8:20 CST - Storybook added to project. Added `preview.js` file and `build.watch` script. To run correctly, run `npm run build.watch`, then run `npm run storybook`. Storybook requires a prod build of the component.
 
+0.0.6 - Second Component Addition - 7/8/20 ___ CST - Form component added to project. Story files added for storybook as well. Ran `npm run build` and `npm build.watch` before testing and publishing. Once published, will be tested in React App.
+
 
 # Runtime
 Runs through stencil `npm run start`
