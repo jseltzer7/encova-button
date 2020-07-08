@@ -21,7 +21,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook --quiet",
     "build.watch": "stencil build --watch",
     "build-sb": "build-storybook -c .storybook -o build"
   },
