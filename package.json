@@ -15,7 +15,7 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "build-st": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -23,7 +23,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build.watch": "stencil build --watch",
-    "build-sb": "build-storybook -c .storybook -o build"
+    "build": "build-storybook -c .storybook -o build"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
