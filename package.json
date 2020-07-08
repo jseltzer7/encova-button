@@ -22,7 +22,8 @@
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build.watch": "stencil build --watch"
+    "build.watch": "stencil build --watch",
+    "build-sb": "build-storybook -c .storybook -o build"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
