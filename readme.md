@@ -28,6 +28,8 @@ Building of component library. Given the tag `<encova-button>`
 0.0.10 - 7/8/20 ___ CST - unpkg.com link works, script tag is below. Adding functionality to the encova-button for onClick. ADD FUNCTION DESCRIPTION HERE.
 
 # Runtime
+Run `npm run build` before storybook can be loaded
+
 Runs through stencil `npm run start`
 
 # Storybook Installation Steps
