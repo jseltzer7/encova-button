@@ -13,6 +13,17 @@ Has text attribute to fill for the button's text
 
 0.0.4 - Minor Update - 7/7/20 3:30 CST - Minor readme updates to make sure they appear on NPM
 
+0.0.5 - Storybook Addition - 7/8/20 8:20 CST - Storybook added to project. Added `preview.js` file and `build.watch` script. To run correctly, run `npm run build.watch`, then run `npm run storybook`. Storybook requires a prod build of the component.
+
 
 # Runtime
 Runs through stencil `npm run start`
+
+# Storybook Installation Steps
+To install Storybook: `npx -p @storybook/cli sb init --type html`
+
+# Running Storybook
+Run `npm run storybook`
+
+# Using Stories
+Keep all stories in the ./stories folder. Main.js knows to look there for all Storybook files
