@@ -1,15 +1,17 @@
-# Encova-button
-Rebuild of the button. Given the tag `<encova-button>`
+# Component Library
+Building of component library. Given the tag `<encova-button>`
 
-# Using the tag
-Has text attribute to fill for the button's text
+## List of Components enclosed
+`<encova-button>` Green rounded button. Attributes: text - Text to go on the button
+
+`<encova-form>` Basic form with label, text field and submit button. On submit, text will clear and print to console.
 
 # Versioning
 0.0.1 - 7/7/20 2:40 CST - Built basic encova styled button, pushed to github repo, builds correctly in stencil
 
 0.0.2 - 7/7/20 2:45 CST - Forgot to run `npm run build`, commit and push then published to NPM
 
-0.0.3 - Minor update - 7/7/20 3:11 CST - Working correctly! Imported well into the React Application - needed the customElements polyfills added to index.js in order to run. Polyfill imported from loader folder in index.js, component imported from component name in any file it is used in.
+0.0.3 - Minor update - 7/7/20 3:10 CST - Working correctly! Imported well into the React Application - needed the customElements polyfills added to index.js in order to run. Polyfill imported from loader folder in index.js, component imported from component name in any file it is used in.
 
 0.0.4 - Minor Update - 7/7/20 3:30 CST - Minor readme updates to make sure they appear on NPM
 
@@ -23,6 +25,8 @@ Has text attribute to fill for the button's text
 
 0.0.9 - 7/8/20 1:30 CST - Added chromatic for static storybook generation hosting. Attempted deploying on multiple services, but all failed except chromatic. Link is located in links section.
 
+0.0.10 - 7/8/20 ___ CST - unpkg.com link works, script tag is below. Adding functionality to the encova-button for onClick. ADD FUNCTION DESCRIPTION HERE.
+
 # Runtime
 Runs through stencil `npm run start`
 
@@ -31,6 +35,9 @@ To install Storybook: `npx -p @storybook/cli sb init --type html`
 
 # Running Storybook
 Run `npm run storybook`
+
+# unpkg
+`<script src="https://unpkg.com/encova-button-stencil-component@0.0.9/dist/encova-button-stencil-component/encova-button-stencil-component.js"></script>` - This script tag can be place in any HTML file to load the component library for use without node/NPM. Version number can be changed to the most recent version, but rest of link stays the same.
 
 # Using Stories
 Keep all stories in the ./stories folder. Main.js knows to look there for all Storybook files
