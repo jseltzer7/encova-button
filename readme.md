@@ -15,12 +15,13 @@ Has text attribute to fill for the button's text
 
 0.0.5 - Storybook Addition - 7/8/20 8:20 CST - Storybook added to project. Added `preview.js` file and `build.watch` script. To run correctly, run `npm run build.watch`, then run `npm run storybook`. Storybook requires a prod build of the component.
 
-0.0.6 - Second Component Addition - 7/8/20 ___ CST - Form component added to project. Story files added for storybook as well. Ran `npm run build` before testing and publishing. Once published, will be tested in React App. `build.watch` might not actually be necessary for running storybook.
+0.0.6 - Second Component Addition - 7/8/20 9:00 CST - Form component added to project. Story files added for storybook as well. Ran `npm run build` before testing and publishing. Once published, will be tested in React App. `build.watch` might not actually be necessary for running storybook.
 
 0.0.7 - 7/8/20 9:20 CST - Updated description for package
 
 0.0.8 - 7/8/20 10:10 CST - Adding Storybooks Knobs Addon to project. Working correctly, added one story to `<encova-button>` that makes use of knobs addition.
 
+0.0.9 - 7/8/20 1:30 CST - Added chromatic for static storybook generation hosting. Attempted deploying on multiple services, but all failed except chromatic. Link is located in links section.
 
 # Runtime
 Runs through stencil `npm run start`
@@ -35,4 +36,19 @@ Run `npm run storybook`
 Keep all stories in the ./stories folder. Main.js knows to look there for all Storybook files
 
 # Vercel
-Attempting vercel push again test run
+Vercel did not work when deploying. Tried changing run scripts but none worked.
+
+# Netlify
+Netlify was not working, tried adding --quiet command to the `build-storybook` script but still failed
+
+# Chromatic
+`npx chromatic --project-token=m29qepgw008` - publishes to chromatic, checks for new versions. Runs build and creates "version control" system for storybook stories. Generates static site for Storybook.
+
+# Links
+[Web Component Library](https://www.npmjs.com/package/encova-button-stencil-component)
+[Web Component Library GitHub Repo](https://github.com/jseltzer7/encova-button)
+[React App with Implementation of Web Components](https://github.com/jseltzer7/Encova-DesignSystem-Testing)
+[Netlify Link when Deployed (not currently available)](https://sleepy-bartik-f66b83.netlify.app/)
+[Vercel Link (project not available)](#)
+[Chromatic Build Link](https://www.chromatic.com/builds?appId=5f06005e4432420022ae1de6)
+[Chromatic Static Story Link](https://5f06005e4432420022ae1de6-tclghgrfut.chromatic.com/)

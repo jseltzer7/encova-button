@@ -6,7 +6,7 @@ export default {
 };
 
 export const Default = () => 
-    `<encova-button text="Default Text"></encova-button>`;
+    `<encova-button text="Default"></encova-button>`;
 
 export const SampleText = () => `
     <encova-button text="Sample Text"></encova-button>
