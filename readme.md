@@ -35,4 +35,19 @@ Run `npm run storybook`
 Keep all stories in the ./stories folder. Main.js knows to look there for all Storybook files
 
 # Vercel
-Attempting vercel push again test run
+Vercel did not work when deploying
+
+# Netlify
+Netlify was not working, tried adding --quiet command to the `build-storybook` script but still failed
+
+# Chromatic
+`npx chromatic --project-token=m29qepgw008` - publishes to chromatic, checks for new versions. Runs build and creates "version control" system for storybook stories. Generates static site for Storybook.
+
+# Links
+[Web Component Library](https://www.npmjs.com/package/encova-button-stencil-component)
+[Web Component Library GitHub Repo](https://github.com/jseltzer7/encova-button)
+[React App with Implementation of Web Components](https://github.com/jseltzer7/Encova-DesignSystem-Testing)
+[Netlify Link when Deployed (not currently available)](https://sleepy-bartik-f66b83.netlify.app/)
+[Vercel Link (project not available)](#)
+[Chromatic Build Link](https://www.chromatic.com/builds?appId=5f06005e4432420022ae1de6)
+[Chromatic Static Story Link](https://5f06005e4432420022ae1de6-tclghgrfut.chromatic.com/)
