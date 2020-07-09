@@ -25,7 +25,7 @@ Building of component library. Given the tag `<encova-button>`
 
 0.0.9 - 7/8/20 1:30 CST - Added chromatic for static storybook generation hosting. Attempted deploying on multiple services, but all failed except chromatic. Link is located in links section.
 
-0.0.10 - 7/8/20 ___ CST - unpkg.com link works, script tag is below. Adding functionality to the encova-button for onClick. ADD FUNCTION DESCRIPTION HERE.
+0.0.10 - 7/9/20 8:00 CST - unpkg.com link works, script tag is below. Adding functionality to the encova-button for onClick. On click, alert window will display with given text. Wrote story with and without knobs for the alert.
 
 # Runtime
 Runs through stencil `npm run start`

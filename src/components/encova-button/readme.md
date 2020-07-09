@@ -7,9 +7,24 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `text`   | `text`    |             | `string` | `undefined` |
+| Property  | Attribute | Description | Type     | Default     |
+| --------- | --------- | ----------- | -------- | ----------- |
+| `color`   | `color`   |             | `string` | `undefined` |
+| `message` | `message` |             | `string` | `undefined` |
+| `text`    | `text`    |             | `string` | `undefined` |
+
+
+## Methods
+
+### `buttonClicked(message: string) => Promise<void>`
+
+
+
+#### Returns
+
+Type: `Promise<void>`
+
+
 
 
 ----------------------------------------------

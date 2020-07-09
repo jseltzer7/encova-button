@@ -8,31 +8,21 @@ import { Component, ComponentInterface, Host, h, Prop, Method } from '@stencil/c
 export class EncovaButton implements ComponentInterface {
 
   @Prop() text: string;
-  @Prop() changeText: string;
+  @Prop() message: string;
   @Prop() color: string;
 
   @Method()
-  async textChange() {
-    let str = "";
-    if (this.text === this.changeText) {
-      str = this.text;
-      this.text = this.changeText;
-    } else {
-      str = this.changeText;
-      this.changeText = this.text;
+  async buttonClicked(message: string) {
+    if (message !== undefined) {
+      alert(message);
     }
     
   }
 
-  // @Method()
-  // async changeColor() {
-     
-  // }
-
   render() {
     return (
       <Host>
-        <button onClick={() => this.textChange()}>{this.text}</button>
+        <button onClick={() => this.buttonClicked(this.message)}>{this.text}</button>
       </Host>
       
     );
