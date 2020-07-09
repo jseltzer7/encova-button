@@ -12,30 +12,9 @@ export const SampleText = () => `
     <encova-button text="Sample Text"></encova-button>
 `;
 
-// storiesOf('encova-button', module)
-//   .addDecorator(withKnobs)
-//   .add('Simple', () => `
-//     <encova-button text="${text}"></encova-button>
-//   `);
-
-// const label = 'Button Text';
-// const defaultValue = 'Sample Text';
-// const groupId = 'GROUP-ID1';
-
-// const value = text(label, defaultValue, groupId);
-
-// export const Change = () => `
-//     <encova-button text="${text('Button Text', "Enter text")}"></encova-button>
-// `;
-
-// storiesOf('Encova-Button', module)
-//   .addDecorator(withKnobs)
-//   .add(
-//     'Change Text',
-//     () => `
-//       <encova-button text="{value = text('Click Me!', 'Label')}"></encova-button>
-//     ` 
-//   );
+export const AlertText = () => `
+    <encova-button text="Text" message="Alert Text"></encova-button>
+`;
 
 storiesOf('Encova-Button', module)
   .addDecorator(withKnobs)
@@ -46,7 +25,19 @@ storiesOf('Encova-Button', module)
         el.text = text('Button Text', 'Enter text');
         return el;
     }
-  );
+);
+
+storiesOf('Encova-Button', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Knob Button and Alert',
+    () => {
+        const el = document.createElement('encova-button');
+        el.text = text('Button Text', 'Enter text');
+        el.message = text("Alert Text", "Enter Text");
+        return el;
+    }
+);
 
 
   

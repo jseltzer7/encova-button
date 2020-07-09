@@ -7,6 +7,9 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface EncovaButton {
+        "buttonClicked": (message: string) => Promise<void>;
+        "color": string;
+        "message": string;
         "text": string;
     }
     interface EncovaForm {
@@ -33,6 +36,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface EncovaButton {
+        "color"?: string;
+        "message"?: string;
         "text"?: string;
     }
     interface EncovaForm {

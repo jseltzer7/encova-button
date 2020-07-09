@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop, Method } from '@stencil/core';
 
 @Component({
   tag: 'encova-button',
@@ -7,12 +7,22 @@ import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 })
 export class EncovaButton implements ComponentInterface {
 
-  @Prop({mutable: true}) text: string;
+  @Prop() text: string;
+  @Prop() message: string;
+  @Prop() color: string;
+
+  @Method()
+  async buttonClicked(message: string) {
+    if (message !== undefined) {
+      alert(message);
+    }
+    
+  }
 
   render() {
     return (
       <Host>
-        <button>{this.text}</button>
+        <button onClick={() => this.buttonClicked(this.message)}>{this.text}</button>
       </Host>
       
     );
