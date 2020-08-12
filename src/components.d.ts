@@ -9,11 +9,15 @@ export namespace Components {
     interface EncovaButton {
         "buttonClicked": (message: string) => Promise<void>;
         "color": string;
+        "disabled": boolean;
         "message": string;
         "text": string;
+        "type": string;
     }
     interface EncovaForm {
         "clearField": () => Promise<void>;
+    }
+    interface EncovaSlat {
     }
 }
 declare global {
@@ -29,22 +33,34 @@ declare global {
         prototype: HTMLEncovaFormElement;
         new (): HTMLEncovaFormElement;
     };
+    interface HTMLEncovaSlatElement extends Components.EncovaSlat, HTMLStencilElement {
+    }
+    var HTMLEncovaSlatElement: {
+        prototype: HTMLEncovaSlatElement;
+        new (): HTMLEncovaSlatElement;
+    };
     interface HTMLElementTagNameMap {
         "encova-button": HTMLEncovaButtonElement;
         "encova-form": HTMLEncovaFormElement;
+        "encova-slat": HTMLEncovaSlatElement;
     }
 }
 declare namespace LocalJSX {
     interface EncovaButton {
         "color"?: string;
+        "disabled"?: boolean;
         "message"?: string;
         "text"?: string;
+        "type"?: string;
     }
     interface EncovaForm {
+    }
+    interface EncovaSlat {
     }
     interface IntrinsicElements {
         "encova-button": EncovaButton;
         "encova-form": EncovaForm;
+        "encova-slat": EncovaSlat;
     }
 }
 export { LocalJSX as JSX };
@@ -53,6 +69,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "encova-button": LocalJSX.EncovaButton & JSXBase.HTMLAttributes<HTMLEncovaButtonElement>;
             "encova-form": LocalJSX.EncovaForm & JSXBase.HTMLAttributes<HTMLEncovaFormElement>;
+            "encova-slat": LocalJSX.EncovaSlat & JSXBase.HTMLAttributes<HTMLEncovaSlatElement>;
         }
     }
 }

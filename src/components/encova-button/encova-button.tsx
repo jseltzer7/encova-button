@@ -10,6 +10,10 @@ export class EncovaButton implements ComponentInterface {
   @Prop() text: string;
   @Prop() message: string;
   @Prop() color: string;
+  @Prop() type: string; //THis will be the type of button that the user requests
+  @Prop() disabled: boolean;
+  
+
 
   @Method()
   async buttonClicked(message: string) {
@@ -19,13 +23,36 @@ export class EncovaButton implements ComponentInterface {
     
   }
 
+  changeType(t: string) {
+    var ret = "";
+    if (t == undefined) {
+      ret = "default";
+    } else {
+      var lower = t.toLowerCase();
+      ret = lower;
+    }
+    console.log(ret);
+    return ret;
+    
+    
+  }
+
   render() {
-    return (
-      <Host>
-        <button onClick={() => this.buttonClicked(this.message)}>{this.text}</button>
-      </Host>
-      
-    );
+    if (this.disabled) {
+      return (
+        <Host>
+          <button disabled class={this.changeType(this.type) + "button"} onClick={() => this.buttonClicked(this.message)}>{this.text}</button>
+        </Host>
+      );
+    } else {
+        return (     
+          <Host>
+            <button class={this.changeType(this.type) + "button"} onClick={() => this.buttonClicked(this.message)}>{this.text}</button>
+          </Host>
+        );
+    }
+    
+    
   }
 
 }
