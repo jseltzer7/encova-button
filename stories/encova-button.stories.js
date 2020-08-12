@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/html';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 export default {
     title: 'Encova-Button',
@@ -15,6 +15,10 @@ export const SampleText = () => `
 export const AlertText = () => `
     <encova-button text="Text" message="Alert Text"></encova-button>
 `;
+
+export const DisabledButton = () => `
+    <encova-button disabled text="Disabled Button" message="This should not pop up"></encova-button>
+`
 
 storiesOf('Encova-Button', module)
   .addDecorator(withKnobs)
@@ -39,5 +43,20 @@ storiesOf('Encova-Button', module)
     }
 );
 
+//This is not right, need to get a select box for the disabled option
+storiesOf('Encova-Button', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Disabled',
+    () => {
+        const label = 'Disabled?';
+        const option = {
+            disabled: 'disabled'
+        };
+        const defaultValue = 'disabled';
+        const value = select(label, option, defaultValue);
+
+    }
+);
 
   

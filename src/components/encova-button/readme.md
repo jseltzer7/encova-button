@@ -7,11 +7,13 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type     | Default     |
-| --------- | --------- | ----------- | -------- | ----------- |
-| `color`   | `color`   |             | `string` | `undefined` |
-| `message` | `message` |             | `string` | `undefined` |
-| `text`    | `text`    |             | `string` | `undefined` |
+| Property   | Attribute  | Description | Type      | Default     |
+| ---------- | ---------- | ----------- | --------- | ----------- |
+| `color`    | `color`    |             | `string`  | `undefined` |
+| `disabled` | `disabled` |             | `boolean` | `undefined` |
+| `message`  | `message`  |             | `string`  | `undefined` |
+| `text`     | `text`     |             | `string`  | `undefined` |
+| `type`     | `type`     |             | `string`  | `undefined` |
 
 
 ## Methods
@@ -23,6 +25,16 @@
 #### Returns
 
 Type: `Promise<void>`
+
+
+
+### `changeType(t: string) => Promise<string>`
+
+
+
+#### Returns
+
+Type: `Promise<string>`
 
 
 
