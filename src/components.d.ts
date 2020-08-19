@@ -17,6 +17,17 @@ export namespace Components {
         "clearField": () => Promise<void>;
     }
     interface EncovaSlat {
+        "city": string;
+        "coverages": number;
+        "insuredName": string;
+        "liabilities": object;
+        "liabilityNumber": number;
+        "limits": object;
+        "street": string;
+        /**
+          * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML
+         */
+        "vehicle": string;
     }
 }
 declare global {
@@ -55,6 +66,17 @@ declare namespace LocalJSX {
     interface EncovaForm {
     }
     interface EncovaSlat {
+        "city"?: string;
+        "coverages"?: number;
+        "insuredName"?: string;
+        "liabilities"?: object;
+        "liabilityNumber"?: number;
+        "limits"?: object;
+        "street"?: string;
+        /**
+          * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML
+         */
+        "vehicle"?: string;
     }
     interface IntrinsicElements {
         "encova-button": EncovaButton;
