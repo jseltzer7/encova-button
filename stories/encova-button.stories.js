@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/html';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 
 export default {
     title: 'Encova-Button',
@@ -31,6 +31,7 @@ storiesOf('Encova-Button', module)
     }
 );
 
+
 storiesOf('Encova-Button', module)
   .addDecorator(withKnobs)
   .add(
@@ -49,14 +50,33 @@ storiesOf('Encova-Button', module)
   .add(
     'Disabled',
     () => {
-        const label = 'Disabled?';
-        const option = {
-            disabled: 'disabled'
-        };
-        const defaultValue = 'disabled';
-        const value = select(label, option, defaultValue);
-
+        const el = document.createElement('encova-button');
+        el.disabled = boolean('Disabled?', false);
+        if (el.disabled) {
+            el.text = "This is a disabled button";
+        } else {
+            el.text = "This button is not disabled";
+            el.message = "This button works";
+        }
+        
+        return el;
     }
 );
 
+storiesOf('Encova-Button', module)
+    .addDecorator(withKnobs)
+    .add(
+        'Button Type',
+        () => {
+            const buttonType = {
+                Default: 'default',
+                Warning: 'warning',
+                Info: 'info'
+            };
+            const el = document.createElement('encova-button');
+            el.type = select('Button type:', buttonType, null);
+            el.text = "Button text";
+            return el;
+        }
+    );
   

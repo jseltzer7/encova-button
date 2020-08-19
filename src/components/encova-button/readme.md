@@ -16,29 +16,6 @@
 | `type`     | `type`     |             | `string`  | `undefined` |
 
 
-## Methods
-
-### `buttonClicked(message: string) => Promise<void>`
-
-
-
-#### Returns
-
-Type: `Promise<void>`
-
-
-
-### `changeType(t: string) => Promise<string>`
-
-
-
-#### Returns
-
-Type: `Promise<string>`
-
-
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
