@@ -25,7 +25,7 @@ export namespace Components {
         "limits": object;
         "street": string;
         /**
-          * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML
+          * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML If you look at the generated readme, it tells you how to use the prop as an attribute
          */
         "vehicle": string;
     }
@@ -74,7 +74,7 @@ declare namespace LocalJSX {
         "limits"?: object;
         "street"?: string;
         /**
-          * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML
+          * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML If you look at the generated readme, it tells you how to use the prop as an attribute
          */
         "vehicle"?: string;
     }

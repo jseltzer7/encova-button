@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
 
+  <!--These script tags are used to get the components from the build folder-->
   <script type="module" src="/build/encova-button-stencil-component.esm.js"></script>
   <script nomodule src="/build/encova-button-stencil-component.js"></script>
-  <link href="//db.onlinewebfonts.com/c/1af7207b68ef04bc4e453e0aa814e986?family=GothamHTF-Book" rel="stylesheet" type="text/css"/>
-  <script src="https://kit.fontawesome.com/2151ac1b16.js" crossorigin="anonymous"></script>
+
+
+  <link href="//db.onlinewebfonts.com/c/1af7207b68ef04bc4e453e0aa814e986?family=GothamHTF-Book" rel="stylesheet" type="text/css"/> <!--I used this link to get the slat font imported-->
+  <script src="https://kit.fontawesome.com/2151ac1b16.js" crossorigin="anonymous"></script> 
 
 </head>
 <body>
   <hr>
   Encova Slat: <br>
+  <!--I have seen web-components with many attributes typically written in this way to keep it more organized-->
   <encova-slat 
       vehicle="2013 Hyundai Elantra" 
       street="123 Main Street"

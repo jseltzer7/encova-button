@@ -1,5 +1,8 @@
 import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 
+/**
+ * These can be changed, just make sure you name them correctly
+ */
 @Component({
   tag: 'encova-slat',
   styleUrl: 'encova-slat.css',
@@ -9,6 +12,7 @@ export class EncovaSlat implements ComponentInterface {
 
   /**
    * Something that I noticed about props is that when camel casing is used, it sometimes causes an issue in the HTML
+   * If you look at the generated readme, it tells you how to use the prop as an attribute
    */
   @Prop() vehicle: string;
   @Prop() insuredName: string;
