@@ -79,7 +79,7 @@ Netlify was not working, tried adding --quiet command to the `build-storybook` s
 `npx chromatic --project-token=m29qepgw008` - publishes to chromatic, checks for new versions. Runs build and creates "version control" system for storybook stories. Generates static site for Storybook.
 
 # Links
-[Web Component Library](https://www.npmjs.com/package/encova-button-stencil-component)
+[Web Component Library (NPM Package)](https://www.npmjs.com/package/encova-button-stencil-component)
 
 [Web Component Library GitHub Repo](https://github.com/jseltzer7/encova-button)
 
